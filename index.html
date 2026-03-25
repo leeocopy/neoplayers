@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoPlayers | Premium Android TV IPTV Platform</title>
+    <meta name="description" content="A premium IPTV experience built for speed, elegance, and effortless activation on Android TV.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@400;500;600&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Foundation -->
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- Meta Tags -->
+    <meta property="og:title" content="NeoPlayers | Premium IPTV for Android TV">
+    <meta property="og:description" content="Cinematic interface, faster browsing, and smart device activation.">
+</head>
+<body>
+
+    <!-- Global Background Aura -->
+    <div class="glow-orb" style="top: 15%; right: -5%; width: 600px; height: 600px; background: rgba(137, 233, 0, 0.04);"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-bar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="nav-logo">Neo<span>Players</span></a>
+            <div class="nav-links">
+                <a href="#features" data-i18n="nav_experience">Experience</a>
+                <a href="#showcase" data-i18n="nav_interface">Interface</a>
+                <a href="#contact" data-i18n="nav_pricing">Pricing</a>
+            </div>
+            <div class="nav-actions">
+                <!-- Premium Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="btn-lang" id="lang-menu-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <span id="current-lang">FR</span>
+                    </button>
+                    <div class="lang-dropdown">
+                        <a href="#" class="lang-opt" data-lang="fr">Français</a>
+                        <a href="#" class="lang-opt" data-lang="ar">العربية</a>
+                        <a href="#" class="lang-opt" data-lang="en">English</a>
+                    </div>
+                </div>
+                <a href="https://wa.me/212659672184" target="_blank" class="btn-premium primary nav-cta" data-i18n="btn_activate_nav" data-wa-link="activate">Activate Device</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container hero-grid">
+                
+                <div class="hero-content">
+                    <div class="hero-badges reveal">
+                        <span class="badge" data-i18n="badge_4k">4K HDR Optimized</span>
+                        <span class="badge" data-i18n="badge_tv">TV-First Build</span>
+                    </div>
+                    
+                    <h1 class="hero-title reveal" style="transition-delay: 0.1s;" data-i18n="hero_title">
+                        The Ultimate <br>
+                        <span>Premium IPTV</span> Experience
+                    </h1>
+                    
+                    <p class="hero-subtext reveal" style="transition-delay: 0.2s;" data-i18n="hero_subtext">
+                        A faster, smarter, and more elegant way to stream your favorite content. 
+                        Built for speed, browsing clarity, and effortless remote-first activation.
+                    </p>
+                    
+                    <div class="cta-group reveal">
+                        <a href="https://wa.me/212659672184" target="_blank" class="btn-premium primary large" data-i18n="btn_activate_hero" data-wa-link="activate">Activate Your Device</a>
+                        <a href="#features" class="btn-premium secondary large" data-i18n="btn_explore">Explore Features</a>
+                    </div>
+
+                    <div class="hero-proof reveal" style="transition-delay: 0.4s;">
+                        <p data-i18n="hero_optimized_for">Optimized for:</p>
+                        <div class="brand-row">
+                            <span>Android TV</span>
+                            <span>Firestick</span>
+                            <span>Shield TV</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal shadow-glow" style="transition-delay: 0.5s;">
+                    <!-- High-end TV Mockup -->
+                    <div class="tv-frame">
+                        <div class="tv-screen">
+                            <img src="assets/home-dashboard.png" alt="NeoPlayers Home Dashboard" id="hero-ui-img">
+                            <div class="reflection"></div>
+                        </div>
+                        <div class="tv-stand"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- WHY NEOPLAYERS (DIFFERENTIATION) -->
+        <section class="features bg-glue-top" id="features">
+            <div class="container">
+                
+                <div class="section-header reveal">
+                    <h2 class="section-title" data-i18n="features_title">The New Standard of <span>IPTV Performance</span></h2>
+                    <p class="section-subtitle" data-i18n="features_subtitle">More than just a player—NeoPlayers is an engineering masterpiece for your living room.</p>
+                </div>
+
+                <div class="features-grid">
+                    
+                    <!-- Pillar 1: TV-First -->
+                    <div class="feature-card glass-panel reveal" style="--reveal-index: 1;">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <h3 class="feature-title" data-i18n="feat_tv_title">TV-First Interface</h3>
+                        <p class="feature-text" data-i18n="feat_tv_desc">Experience cinematic navigation natively built for the big screen with full remote control immersion.</p>
+                    </div>
+
+                    <!-- Pillar 2: Ultra-Fast -->
+                    <div class="feature-card glass-panel reveal" style="--reveal-index: 2;">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        </div>
+                        <h3 class="feature-title" data-i18n="feat_cache_title">Turbo-Cache™ Speed</h3>
+                        <p class="feature-text" data-i18n="feat_cache_desc">Zero lag browsing. Our smart caching engine pre-loads metadata for an instant, fluid user experience.</p>
+                    </div>
+
+                    <!-- Pillar 3: Match Today -->
+                    <div class="feature-card glass-panel reveal" style="--reveal-index: 3;">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+                        </div>
+                        <h3 class="feature-title" data-i18n="feat_match_title">Match Today Hub</h3>
+                        <p class="feature-text" data-i18n="feat_match_desc2">Stay updated with real-time football schedules and live score integration directly in your TV dashboard.</p>
+                    </div>
+
+                    <!-- Pillar 4: Multi-Profile -->
+                    <div class="feature-card glass-panel reveal" style="--reveal-index: 4;">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <h3 class="feature-title" data-i18n="feat_profile_title">Multi-Profile Shield</h3>
+                        <p class="feature-text" data-i18n="feat_profile_desc">Personalize your journey. Secure, individual profiles for everyone in the home with personalized watchlists.</p>
+                    </div>
+
+                    <!-- Pillar 5: Built-in Speedtest -->
+                    <div class="feature-card glass-panel reveal" style="--reveal-index: 5;">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1v12z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+                        </div>
+                        <h3 class="feature-title" data-i18n="feat_diag_title">Integrated Diagnostics</h3>
+                        <p class="feature-text" data-i18n="feat_diag_desc">Monitor your network health with a built-in professional speedtest tailored for high-res streaming.</p>
+                    </div>
+
+                    <!-- Pillar 6: 4K Native -->
+                    <div class="feature-card glass-panel reveal" style="--reveal-index: 6;">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+                        </div>
+                        <h3 class="feature-title" data-i18n="feat_4k_title">4K HDR Optimized</h3>
+                        <p class="feature-text" data-i18n="feat_4k_desc">Bitstream native support for UHD, HDR10+, and Dolby Vision for the ultimate cinematic clarity.</p>
+                    </div>
+
+                    <!-- Pillar 7: Smart Activation -->
+                    <div class="feature-card glass-panel reveal" style="--reveal-index: 7;">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        </div>
+                        <h3 class="feature-title" data-i18n="feat_remote_title">60s Smart Remote</h3>
+                        <p class="feature-text" data-i18n="feat_remote_desc">Skip the complexity. Activate your device using our secure, remote-first flow in under 60 seconds.</p>
+                    </div>
+
+                    <!-- Pillar 8: Parental PIN -->
+                    <div class="feature-card glass-panel reveal" style="--reveal-index: 8;">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <h3 class="feature-title" data-i18n="feat_pin_title">Total PIN Guard</h3>
+                        <p class="feature-text" data-i18n="feat_pin_desc">Advanced parental controls with granular PIN-based locks for categories, profiles, and settings.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- INTERFACE SHOWCASE -->
+        <section class="showcase bg-glue-bottom" id="showcase">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="showcase_title">The Interface of the <span>Future</span></h2>
+                    <p class="section-subtitle" data-i18n="showcase_subtitle">Experience the product proof.</p>
+                </div>
+
+                <div class="showcase-grid">
+                    <!-- PRIME 1: LIVE ARENA -->
+                    <div class="showcase-item glass-panel reveal" style="--reveal-index: 1;">
+                        <div class="showcase-image-wrapper">
+                            
+                            <img src="assets/live-tv-triple-column.png" alt="NeoPlayers Live TV Arena" class="showcase-img">
+                            <div class="showcase-overlay"></div>
+                            <div class="reflection"></div>
+                        </div>
+                        <div class="showcase-content">
+                            <span class="showcase-badge" data-i18n="showcase_arena">Live Arena</span>
+                            <h3 class="showcase-title" data-i18n="showcase_arena_title">Triple-Column Sports Engine</h3>
+                            <p class="showcase-text" data-i18n="showcase_arena_desc">Instant 'Match Today' access inside a high-performance browsing engine featuring native channel categorization.</p>
+                        </div>
+                    </div>
+
+                    <!-- PRIME 2: ELITE CINEMA -->
+                    <div class="showcase-item glass-panel reveal" style="--reveal-index: 2;">
+                        <div class="showcase-image-wrapper">
+                            
+                            <img src="assets/movies-grid.png" alt="NeoPlayers Movies Library" class="showcase-img">
+                            <div class="showcase-overlay"></div>
+                            <div class="reflection"></div>
+                        </div>
+                        <div class="showcase-content">
+                            <span class="showcase-badge" data-i18n="showcase_cinema">Elite Cinema</span>
+                            <h3 class="showcase-title" data-i18n="showcase_cinema_title">High-Density Movie Vault</h3>
+                            <p class="showcase-text" data-i18n="showcase_cinema_desc">Smooth, lightning-fast navigation through massive movie libraries with real-time poster rendering.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECONDARY: HIGH-READABILITY TECHNICAL GRID (2x2) -->
+                <div class="showcase-depth-grid reveal">
+                    
+                    <!-- Detail 1: Movie Details -->
+                    <div class="depth-card glass-panel">
+                        <div class="depth-img-container large">
+                            
+                            <img src="assets/movie-details.png" alt="Cinematic Metadata">
+                            <div class="reflection"></div>
+                        </div>
+                        <div class="depth-info">
+                            <h4 data-i18n="showcase_depth">Full Cinematic Metadata</h4>
+                            <p data-i18n="showcase_depth_desc">Complete cast, crew, and high-res plot summaries delivered in an elegant details view.</p>
+                        </div>
+                    </div>
+
+                    <!-- Detail 2: Series -->
+                    <div class="depth-card glass-panel">
+                        <div class="depth-img-container large">
+                            
+                            <img src="assets/series-grid.png" alt="Series Management">
+                            <div class="reflection"></div>
+                        </div>
+                        <div class="depth-info">
+                            <h4 data-i18n="showcase_series">Advanced Series Manager</h4>
+                            <p data-i18n="showcase_series_desc">Automated episode tracking and season management optimized for heavy binge-watching.</p>
+                        </div>
+                    </div>
+
+                    <!-- Detail 3: Profiles -->
+                    <div class="depth-card glass-panel">
+                        <div class="depth-img-container large">
+                            
+                            <img src="assets/profile-select.png" alt="Multi-Profile Shield">
+                            <div class="reflection"></div>
+                        </div>
+                        <div class="depth-info">
+                            <h4 data-i18n="showcase_profiles">Multi-Profile Personalization</h4>
+                            <p data-i18n="showcase_profiles_desc">Secure, PIN-protected profiles with individual watchlists for everyone in the home.</p>
+                        </div>
+                    </div>
+
+                    <!-- Detail 4: Settings -->
+                    <div class="depth-card glass-panel">
+                        <div class="depth-img-container large">
+                            
+                            <img src="assets/settings-screen.png" alt="Smart Hub Tools">
+                            <div class="reflection"></div>
+                        </div>
+                        <div class="depth-info">
+                            <h4 data-i18n="showcase_settings">Power-User Hub</h4>
+                            <p data-i18n="showcase_settings_desc">Integrated diagnostics and performance tools directly within the app ecosystem.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="showcase-cta-row reveal" style="text-align: center; margin-top: var(--space-xl);">
+                    <a href="https://wa.me/212659672184" target="_blank" class="btn-premium primary" data-i18n="btn_activate_showcase" data-wa-link="activate">Stop Settling. Activate Neo.</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPARISON MATRIX: THE NEO EDGE -->
+        <section class="comparison" id="comparison" data-i18n-section="comparison">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="comparison_title">Why the World is Switching to <span>NeoPlayers</span></h2>
+                    <p class="section-subtitle" data-i18n="comparison_subtitle">Experience the engineering gap. We don't just play streams; we redefine how you experience entertainment on the big screen.</p>
+                </div>
+
+                <div class="matrix-container glass-panel">
+                    <!-- HEADER -->
+                    <div class="matrix-row matrix-header">
+                        <div class="matrix-col feature">Core Capability</div>
+                        <div class="matrix-col standard">Standard Apps</div>
+                        <div class="matrix-col neo">NeoPlayers</div>
+                    </div>
+
+                    <!-- ROW 1: UX -->
+                    <div class="matrix-row reveal">
+                        <div class="matrix-col feature">
+                            <span class="matrix-label">UX Philosophy</span>
+                        </div>
+                        <div class="matrix-col standard">Mobile-style list views</div>
+                        <div class="matrix-col neo highlight" data-i18n="comp_ux">Cinematic TV-First Interface</div>
+                    </div>
+
+                    <!-- ROW 2: CACHE -->
+                    <div class="matrix-row reveal">
+                        <div class="matrix-col feature">
+                            <span class="matrix-label">Performance</span>
+                        </div>
+                        <div class="matrix-col standard">Standard loading states</div>
+                        <div class="matrix-col neo highlight" data-i18n="comp_speed">Turbo-Cache™ Instant Browsing</div>
+                    </div>
+
+                    <!-- ROW 3: MATCH TODAY -->
+                    <div class="matrix-row reveal">
+                        <div class="matrix-col feature">
+                            <span class="matrix-label">Live Sports</span>
+                        </div>
+                        <div class="matrix-col standard">Hard-coded channel lists</div>
+                        <div class="matrix-col neo highlight" data-i18n="comp_sports">Real-time 'Match Today' Scoreboards</div>
+                    </div>
+
+                    <!-- ROW 4: ACTIVATION -->
+                    <div class="matrix-row reveal">
+                        <div class="matrix-col feature">
+                            <span class="matrix-label">Activation Flow</span>
+                        </div>
+                        <div class="matrix-col standard">Complex manual entry</div>
+                        <div class="matrix-col neo highlight">60s Smart Remote Activation</div>
+                    </div>
+
+                    <!-- ROW 5: SPEEDTEST -->
+                    <div class="matrix-row reveal">
+                        <div class="matrix-col feature">
+                            <span class="matrix-label">Built-in Tools</span>
+                        </div>
+                        <div class="matrix-col standard">Requires external speedtests</div>
+                        <div class="matrix-col neo highlight">Integrated Premium Diagnostics</div>
+                    </div>
+
+                    <!-- ROW 6: ASSETS -->
+                    <div class="matrix-row reveal">
+                        <div class="matrix-col feature">
+                            <span class="matrix-label">Visual Pipeline</span>
+                        </div>
+                        <div class="matrix-col standard">Basic 1080p rendering</div>
+                        <div class="matrix-col neo highlight">Bitstream Native 4K & HDR10+</div>
+                    </div>
+
+                    <!-- ROW 7: MULTI-PROFILE -->
+                    <div class="matrix-row reveal">
+                        <div class="matrix-col feature">
+                            <span class="matrix-label">Personalization</span>
+                        </div>
+                        <div class="matrix-col standard">Single account silos</div>
+                        <div class="matrix-col neo highlight">Dynamic Multi-Profile System</div>
+                    </div>
+
+                    <!-- ROW 8: OS CORE -->
+                    <div class="matrix-row reveal">
+                        <div class="matrix-col feature">
+                            <span class="matrix-label">Engineering</span>
+                        </div>
+                        <div class="matrix-col standard">Generic opensource forks</div>
+                        <div class="matrix-col neo highlight">Proprietary Native Android TV OS</div>
+                    </div>
+                </div>
+
+                <div class="comparison-footer reveal" style="text-align: center; margin-top: var(--space-xl);">
+                    <div style="margin-bottom: var(--space-md);">
+                        <span class="badge">Professional Choice</span>
+                    </div>
+                    <a href="https://wa.me/212659672184" target="_blank" class="btn-premium primary" data-wa-link="activate">Stop Settling. Activate Neo.</a>
+                </div>
+            </div>
+        </section>
+        <!-- ACTIVATION FLOW: THE 60-SECOND SYNC -->
+        <section class="activation" id="activate" data-i18n-section="activation">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="activation_title">Ready in <span>60 Seconds</span></h2>
+                    <p class="section-subtitle" data-i18n="activation_subtitle">Seamless remote sync for your hardware.</p>
+                </div>
+
+                <div class="activation-flow">
+                    <div class="connector-line"></div>
+
+                    <div class="steps-grid">
+                        <div class="step-card glass-panel reveal">
+                            <div class="step-num">01</div>
+                            <h3 data-i18n="step_1">Install App</h3>
+                            <p data-i18n="step_1_desc">Download NeoPlayers directly from the official store on your Smart TV or Android device.</p>
+                        </div>
+
+                        <div class="step-card glass-panel reveal">
+                            <div class="step-num">02</div>
+                            <h3 data-i18n="step_2">Get Device ID</h3>
+                            <p data-i18n="step_2_desc">Launch the app to see your unique Device ID and QR activation code on the screen.</p>
+                            <div class="mockup-inset">
+                                <img src="assets/activation-screen.png" alt="Activation Screen">
+                                <div class="mockup-glow"></div>
+                            </div>
+                        </div>
+
+                        <div class="step-card glass-panel reveal">
+                            <div class="step-num">03</div>
+                            <h3 data-i18n="step_3">WhatsApp Sync</h3>
+                            <p style="margin-bottom: var(--space-sm);" data-i18n="step_3_desc">Send your ID to our activation portal. Our system processes the request instantly.</p>
+                            <a href="https://wa.me/212659672184" target="_blank" class="btn-premium primary" style="padding: 10px 24px; font-size: 14px; margin-top: auto;" data-i18n="btn_send_id" data-wa-link="activate">Send Device ID</a>
+                        </div>
+
+                        <div class="step-card glass-panel reveal">
+                            <div class="step-num">04</div>
+                            <h3 data-i18n="step_4">Instant Watch</h3>
+                            <p data-i18n="step_4_desc">Your subscription is automatically linked. Refresh the app and start streaming immediately.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="compatibility" id="compatibility" data-i18n-section="compatibility">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="compatibility_title">Built for Your <span>Every Screen</span></h2>
+                    <p class="section-subtitle" data-i18n="compatibility_subtitle">From the living room to the palm of your hand. NeoPlayers is engineered for the entire Android ecosystem.</p>
+                </div>
+
+                <div class="device-grid">
+                    <div class="device-item glass-panel reveal">
+                        <div class="device-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <path d="M8 21h8M12 17v4" />
+                            </svg>
+                        </div>
+                        <h4>Android TV & OS</h4>
+                        <p>Optimized for Sony, Philips, TCL, and all native Android TV systems.</p>
+                    </div>
+
+                    <div class="device-item glass-panel reveal">
+                        <div class="device-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="5" y="2" width="14" height="20" rx="2" />
+                                <path d="M12 18h.01" />
+                            </svg>
+                        </div>
+                        <h4>Android Mobile</h4>
+                        <p>Take your entertainment on the go with our fully responsive mobile app.</p>
+                    </div>
+
+                    <div class="device-item glass-panel reveal">
+                        <div class="device-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z" />
+                                <path d="M9 3a3 3 0 0 0-3 3v12a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z" />
+                            </svg>
+                        </div>
+                        <h4>Firestick & Boxes</h4>
+                        <p>Full support for Amazon Fire TV, Nvidia Shield, and all Android-based TV boxes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT / ACTIVATION PORTAL -->
+        <section class="contact-portal" id="contact" data-i18n-section="contact">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="contact_title">Direct Activation <span>Portal</span></h2>
+                    <p class="section-subtitle" data-i18n="contact_subtitle">Contact us via WhatsApp for instant secure setup.</p>
+                </div>
+
+                <div class="contact-card glass-panel reveal text-center" style="max-width: 600px; margin: 0 auto; padding: var(--space-xl);">
+                    <div class="contact-icon" style="margin-bottom: var(--space-md); color: var(--accent);">
+                        <!-- WhatsApp Icon -->
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a5.8 5.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="contact_card_title" style="margin-bottom: var(--space-sm); font-size: 1.5rem; color: var(--text-primary);">Secure Your Access</h3>
+                    <p data-i18n="contact_card_desc" style="margin-bottom: var(--space-lg); color: var(--text-secondary);">Skip the generic sign-ups. Tap below to speak directly with our activation team for instant processing.</p>
+                    <a href="https://wa.me/212659672184" target="_blank" class="btn-premium primary large" data-i18n="btn_activate_hero" data-wa-link="activate">Activate Your Device</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ: FRICTION REMOVAL -->
+        <section class="faq" id="faq" data-i18n-section="faq">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="faq_title">Common <span>Questions</span></h2>
+                    <p class="section-subtitle" data-i18n="faq_subtitle">Everything you need to know about the NeoPlayers experience.</p>
+                </div>
+
+                <div class="faq-accordion">
+                    <!-- Q1 -->
+                    <div class="faq-item glass-panel reveal" style="--reveal-index: 1;">
+                        <button class="faq-question">
+                            <span>How do I activate NeoPlayers?</span>
+                            <div class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>It’s a seamless remote sync. Just enter your Device ID in our activation portal or scan the QR code within the app. Your TV will refresh instantly once confirmed.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="faq-item glass-panel reveal" style="--reveal-index: 2;">
+                        <button class="faq-question">
+                            <span>How do I get my Device ID?</span>
+                            <div class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Simply launch the NeoPlayers app on your TV. Your unique Device ID is displayed in high visibility on the main activation splash screen.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="faq-item glass-panel reveal" style="--reveal-index: 3;">
+                        <button class="faq-question">
+                            <span>Does NeoPlayers work on Android TV and Firestick?</span>
+                            <div class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. NeoPlayers is natively engineered for the entire Android ecosystem, including Sony, Philips, Fire TV Stick, Nvidia Shield, and all Android TV Boxes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q4 -->
+                    <div class="faq-item glass-panel reveal" style="--reveal-index: 4;">
+                        <button class="faq-question">
+                            <span>Is the app optimized for TV remote navigation?</span>
+                            <div class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>100%. Unlike generic players, NeoPlayers is a TV-first platform built for D-pad navigation, ensuring a fluid experience with any standard remote control.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q5 -->
+                    <div class="faq-item glass-panel reveal" style="--reveal-index: 5;">
+                        <button class="faq-question">
+                            <span>Does it support 4K and high-performance playback?</span>
+                            <div class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely. Our proprietary bitstream engine is optimized for native 4K UHD, HDR10+, and Dolby Vision content for the highest possible cinematic quality.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q6 -->
+                    <div class="faq-item glass-panel reveal" style="--reveal-index: 6;">
+                        <button class="faq-question">
+                            <span>Can I manage multiple profiles?</span>
+                            <div class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. NeoPlayers supports true multi-profile management, allowing each family member to have their own secure, PIN-protected space with personalized watchlists.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q7 -->
+                    <div class="faq-item glass-panel reveal" style="--reveal-index: 7;">
+                        <button class="faq-question">
+                            <span>How fast is activation?</span>
+                            <div class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Real-time. Most device activations take less than 60 seconds from the moment of request to the instant your library becomes live.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q8 -->
+                    <div class="faq-item glass-panel reveal" style="--reveal-index: 8;">
+                        <button class="faq-question">
+                            <span>Is NeoPlayers easy to set up?</span>
+                            <div class="faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Engineered for simplicity. Install the app, get your ID, and sync. No complex URL typing or technical configuration is required from your side.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER: THE CONVERSION HUB -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-cta reveal">
+                <h2 data-i18n="footer_cta_title">Experience the <span>NeoPlayers</span> standard.</h2>
+                <p data-i18n="footer_cta_subtitle">Join thousands of users who have already upgraded their entertainment experience.</p>
+                <div class="cta-group">
+                    <a href="https://wa.me/212659672184" target="_blank" class="btn-premium primary" data-i18n="btn_activate_footer" data-wa-link="activate">Activate Now</a>
+                    <a href="https://wa.me/212659672184" target="_blank" class="btn-premium secondary" data-i18n="btn_support" data-wa-link="support">Contact Support</a>
+                </div>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">Neo<span>Players</span></div>
+                    <p>The premier Android TV interface for high-performance streaming. Engineered for elegance, built for speed.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.11.02-1.93 1.23-5.46 3.62-.51.35-.98.52-1.4.51-.46-.01-1.35-.26-2.01-.48-.81-.27-1.45-.42-1.39-.88.03-.24.37-.48 1.02-.73 4-1.74 6.67-2.88 8.01-3.41 3.81-1.52 4.6-1.78 5.12-1.79.11 0 .37.03.54.17.14.11.18.26.2.37.02.08.03.24.01.4z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#features">Experience</a></li>
+                        <li><a href="#showcase">Interface</a></li>
+                        <li><a href="#comparison">Dominance</a></li>
+                        <li><a href="#activate">Activation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Direct Connection</h4>
+                    <p>Contact our priority support team for rapid device activation and troubleshooting.</p>
+                    <a href="mailto:support@neoplayers.com" class="footer-email">support@neoplayers.com</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 NeoPlayers. All rights reserved. Engineering Excellence for the Big Screen.</p>
+                <div class="footer-meta">
+                    <span class="status-dot"></span> System Status: 100% Operational
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
