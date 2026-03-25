@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 15. Multilingual Support
     const translations = {
         en: {
-            nav_experience: "Experience", nav_interface: "Interface", nav_pricing: "Pricing", btn_activate_nav: "Activate Device",
+            nav_experience: "Experience", nav_interface: "Interface", nav_pricing: "Pricing", nav_download: "Download", btn_activate_nav: "Activate Device",
             hero_title: "The Ultimate Premium IPTV Experience", hero_subtext: "A faster, smarter, and more elegant way to stream your favorite content. Built for speed and clarity.",
             btn_activate_hero: "Activate Your Device", btn_explore: "Explore Features",
             feat_title: "The Engineering Gap", feat_subtitle: "Elite performance for high-end hardware.",
@@ -104,8 +104,12 @@ document.addEventListener('DOMContentLoaded', () => {
             footer_cta_title: "Experience the NeoPlayers standard.", footer_cta_subtitle: "Thousands have upgraded. You're next.",
             btn_activate_footer: "Activate Now", btn_support: "Contact Support", btn_send_id: "Send Device ID",
             badge_4k: "4K HDR Optimized", badge_tv: "TV-First Build", hero_optimized_for: "Optimized for:",
-            months: "Months", year: "Year", lifetime: "Lifetime", btn_choose_plan: "Select Plan",
+            months: "Months", year: "Year", lifetime: "Lifetime",
             pricing_title: "Investment in Excellence", pricing_subtitle: "Choose the plan that fits your entertainment lifestyle.",
+            download_title: "Install NeoPlayers", download_subtitle: "Get the app running on your TV or Android device in seconds.",
+            download_downloader_title: "Via Downloader App", download_downloader_desc: "Enter this code in the Downloader search bar on Firestick or TV.",
+            download_apk_title: "Direct APK Download", download_apk_desc: "Download the installation file directly for manual setup.",
+            btn_download_apk: "Download APK Now",
             features_title: "The New Standard of IPTV Performance", features_subtitle: "More than just a player—NeoPlayers is an engineering masterpiece for your living room.",
             feat_tv_title: "TV-First Interface", feat_tv_desc: "Experience cinematic navigation natively built for the big screen with full remote control immersion.",
             feat_cache_title: "Turbo-Cache™ Speed", feat_cache_desc: "Zero lag browsing. Our smart caching engine pre-loads metadata for an instant, fluid user experience.",
@@ -127,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
             step_4_desc: "Your subscription is automatically linked. Refresh the app and start streaming immediately."
         },
         fr: {
-            nav_experience: "Expérience", nav_interface: "Interface", nav_pricing: "Activer", btn_activate_nav: "Activer l'Appareil",
+            nav_experience: "Expérience", nav_interface: "Interface", nav_pricing: "Tarifs", nav_download: "Télécharger", btn_activate_nav: "Activer l'Appareil",
             hero_title: "L'Expérience IPTV Premium Ultime", hero_subtext: "Une façon plus rapide et élégante de diffuser vos contenus. Conçu pour la vitesse et la clarté.",
             btn_activate_hero: "Activer Votre Appareil", btn_explore: "Explorer les Fonctions",
             feat_title: "La Différence Technique", feat_subtitle: "Performance d'élite pour le matériel haut de gamme.",
@@ -150,6 +154,10 @@ document.addEventListener('DOMContentLoaded', () => {
             badge_4k: "4K HDR Optimisé", badge_tv: "Conçu pour TV", hero_optimized_for: "Optimisé pour :",
             months: "Mois", year: "An", lifetime: "À Vie", btn_choose_plan: "Choisir ce Plan",
             pricing_title: "Investir pour l'Excellence", pricing_subtitle: "Choisissez le plan qui correspond à votre style de vie.",
+            download_title: "Installer NeoPlayers", download_subtitle: "L'application sur votre TV ou appareil Android en quelques secondes.",
+            download_downloader_title: "Via l'App Downloader", download_downloader_desc: "Entrez ce code dans la barre de recherche de Downloader sur Firestick ou TV.",
+            download_apk_title: "Téléchargement APK Direct", download_apk_desc: "Téléchargez le fichier d'installation directement pour une install manuelle.",
+            btn_download_apk: "Télécharger l'APK",
             features_title: "Le Nouveau Standard IPTV", features_subtitle: "Plus qu'un lecteur — NeoPlayers est un chef-d'œuvre technologique pour votre salon.",
             feat_tv_title: "Interface TV-First", feat_tv_desc: "Navigation cinématique native conçue pour le grand écran avec une immersion totale à la télécommande.",
             feat_cache_title: "Vitesse Turbo-Cache™", feat_cache_desc: "Navigation sans latence. Notre moteur de cache précharge les métadonnées pour une expérience fluide et instantanée.",
@@ -171,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
             step_4_desc: "Votre abonnement est automatiquement lié. Rafraîchissez l'application et commencez à streamer immédiatement."
         },
         ar: {
-            nav_experience: "التجربة", nav_interface: "الواجهة", nav_pricing: "تفعيل", btn_activate_nav: "تفعيل الجهاز",
+            nav_experience: "التجربة", nav_interface: "الواجهة", nav_pricing: "الأسعار", nav_download: "تحميل", btn_activate_nav: "تفعيل الجهاز",
             hero_title: "تجربة IPTV المتميزة المطلقة", hero_subtext: "طريقة أسرع وأكثر أناقةلبث المحتوى المفضل لديك. مصمم للسرعة والوضوح التام.",
             btn_activate_hero: "فعل جهازك الآن", btn_explore: "استكشف المزايا",
             feat_title: "الفجوة الهندسية", feat_subtitle: "أداء نخبوي للأجهزة عالية المواصفات.",
@@ -194,6 +202,10 @@ document.addEventListener('DOMContentLoaded', () => {
             badge_4k: "4K HDR محسّن", badge_tv: "مبني للتلفزيون", hero_optimized_for: "محسّن لـ:",
             months: "أشهر", year: "سنة", lifetime: "مدى الحياة", btn_choose_plan: "اختيار الخطة",
             pricing_title: "استثمار في التميز", pricing_subtitle: "اختر الخطة التي تناسب نمط حياتك الترفيهي.",
+            download_title: "تثبيت NeoPlayers", download_subtitle: "احصل على التطبيق على جهاز التلفزيون أو الأندرويد في ثوانٍ.",
+            download_downloader_title: "عبر تطبيق Downloader", download_downloader_desc: "أدخل هذا الكود في شريط البحث في تطبيق Downloader على Firestick أو التلفزيون.",
+            download_apk_title: "تحميل APK مباشر", download_apk_desc: "قم بتنزيل ملف التثبيت مباشرة للإعداد اليدوي.",
+            btn_download_apk: "تحميل APK الآن",
             features_title: "المعيار الجديد لـ IPTV", features_subtitle: "أكثر من مجرد مشغل — NeoPlayers تحفة هندسية لغرفة معيشتك.",
             feat_tv_title: "واجهة TV-First", feat_tv_desc: "تصفح سينمائي مبني أصلاً للشاشة الكبيرة مع انغماس كامل في التحكم عن بُعد.",
             feat_cache_title: "سرعة Turbo-Cache™", feat_cache_desc: "تصفح بدون تأخير. محرك التخزين المؤقت الذكي يحمّل البيانات مسبقاً لتجربة فورية وسلسة.",

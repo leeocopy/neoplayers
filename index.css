@@ -1,6 +1,10 @@
 /* index.css - NeoPlayers Design System Engine */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     /* Color System */
     --bg-primary: #0C111D;
@@ -1479,3 +1483,78 @@ section {
         transform: scale(1);
     }
 }
+
+/* DOWNLOAD SECTION */
+.download {
+    padding: var(--space-section) 0;
+    position: relative;
+    background: #0C111D;
+}
+
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+}
+
+.download-card {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.download-icon {
+    margin-bottom: var(--space-md);
+    color: var(--accent-neon);
+}
+
+.download-icon svg {
+    width: 64px;
+    height: 64px;
+}
+
+.download-card h4 {
+    margin-bottom: var(--space-sm);
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+.download-card p {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-lg);
+}
+
+.downloader-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(137, 233, 0, 0.1);
+    border: 1px dashed var(--accent-neon);
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.code-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent-neon);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.code-value {
+    font-size: 32px;
+    font-weight: 800;
+    color: #FFF;
+    letter-spacing: 4px;
+}
+
+@media (max-width: 768px) {
+    .download-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
