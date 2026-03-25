@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 12. Intersection Observer for Cinematic Reveals
     const revealOptions = {
-        threshold: 0.15,
+        threshold: 0.1,
         rootMargin: "0px 0px -50px 0px"
     };
 
@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                // Once revealed, no need to watch anymore
                 observer.unobserve(entry.target);
             }
         });
@@ -34,8 +33,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Watch for reveal elements
     const observeElements = () => {
-        document.querySelectorAll('.reveal').forEach(el => {
-            revealObserver.observe(el);
+        const reveals = document.querySelectorAll('.reveal');
+        
+        // Safety Fallback: Reveal everything if the observer is disabled or slow
+        setTimeout(() => {
+            reveals.forEach(el => el.classList.add('active'));
+        }, 3000); // 3 seconds grace period
+
+        reveals.forEach(el => {
+            // Check if already in viewport (e.g. above the fold)
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                el.classList.add('active');
+            } else {
+                revealObserver.observe(el);
+            }
         });
     };
 
