@@ -1484,6 +1484,64 @@ section {
     }
 }
 
+/* FEATURES EXTENDED GRID */
+.features-grid-section {
+    padding: var(--space-section) 0;
+    background: #0C111D;
+    position: relative;
+    overflow: hidden;
+}
+
+.features-ext-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+}
+
+.feat-card {
+    padding: var(--space-lg);
+    text-align: center;
+    transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1), background 0.3s;
+    height: 100%;
+}
+
+.feat-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.feat-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--accent-neon);
+    margin: 0 auto var(--space-md);
+}
+
+.feat-card h4 {
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+    font-size: 1.1rem;
+}
+
+.feat-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .features-ext-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .features-ext-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* DOWNLOAD SECTION */
 .download {
     padding: var(--space-section) 0;
