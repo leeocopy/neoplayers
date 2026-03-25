@@ -1364,3 +1364,118 @@ section {
 [dir="rtl"] .footer-brand {
     text-align: right;
 }
+
+/* PRICING SECTION */
+.pricing {
+    padding: var(--space-section) 0;
+    position: relative;
+    background: linear-gradient(to bottom, #0C111D 0%, #121826 100%);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+}
+
+.pricing-card {
+    padding: 48px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.pricing-card.popular {
+    border: 1px solid var(--accent-neon);
+    background: rgba(137, 233, 0, 0.05);
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.popular-tag {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gradient-primary);
+    color: var(--bg-primary);
+    padding: 4px 16px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.plan-name {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    margin-bottom: var(--space-sm);
+}
+
+.plan-price {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: var(--space-md);
+}
+
+.price-currency {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.price-value {
+    font-size: 64px;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1;
+}
+
+.price-duration {
+    font-size: 16px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.plan-features {
+    list-style: none;
+    margin-bottom: var(--space-lg);
+    width: 100%;
+}
+
+.plan-features li {
+    padding: 12px 0;
+    color: var(--text-secondary);
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.plan-features li:last-child {
+    border-bottom: none;
+}
+
+.plan-features li svg {
+    margin-right: 8px;
+    color: var(--accent-neon);
+}
+
+@media (max-width: 1024px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pricing-card.popular {
+        transform: scale(1);
+    }
+}
